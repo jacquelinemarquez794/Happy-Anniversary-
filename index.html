@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Our Little World — Portfolio Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="desktop">
+    <div class="stars" aria-hidden="true">✦　✧　✦　✧　✦</div>
+    <section class="window">
+      <div class="window-bar"><span>♡ our-little-world.exe</span><span>▢ ×</span></div>
+      <div class="content">
+        <section id="welcome" class="screen active">
+          <p class="eyebrow">WELCOME TO</p>
+          <h1>Our Little World ♡</h1>
+          <p>An interactive retro-style website project.</p>
+          <button data-screen="home">▶ START</button>
+        </section>
+        <section id="home" class="screen">
+          <h1>Choose a page ♡</h1>
+          <div class="menu">
+            <button data-screen="story">♡ STORY</button>
+            <button data-screen="memories">▣ GALLERY</button>
+            <button data-screen="notes">✉ NOTES</button>
+            <button data-screen="quiz">★ QUIZ</button>
+          </div>
+        </section>
+        <section id="story" class="screen">
+          <h1>Story Timeline</h1>
+          <p>Example cards used to demonstrate the layout.</p>
+          <div class="cards">
+            <article><div class="photo">IMAGE 01</div><h3>Chapter One</h3><p>Sample timeline description.</p></article>
+            <article><div class="photo">IMAGE 02</div><h3>Chapter Two</h3><p>Sample timeline description.</p></article>
+            <article><div class="photo">IMAGE 03</div><h3>Chapter Three</h3><p>Sample timeline description.</p></article>
+          </div>
+          <button data-screen="home">← BACK</button>
+        </section>
+        <section id="memories" class="screen">
+          <h1>Photo Gallery</h1>
+          <p>Click a placeholder to enlarge it.</p>
+          <div class="gallery">
+            <button class="photo" aria-label="Enlarge placeholder 1">PHOTO 01</button>
+            <button class="photo" aria-label="Enlarge placeholder 2">PHOTO 02</button>
+            <button class="photo" aria-label="Enlarge placeholder 3">PHOTO 03</button>
+            <button class="photo" aria-label="Enlarge placeholder 4">PHOTO 04</button>
+          </div>
+          <button data-screen="home">← BACK</button>
+        </section>
+        <section id="notes" class="screen">
+          <h1>Little Notes ✉</h1>
+          <p>Click an envelope to open sample content.</p>
+          <div class="cards">
+            <button class="note" data-note="Sample note one. Replace this text with your own content.">✉ NOTE 1</button>
+            <button class="note" data-note="Sample note two. This is only placeholder text.">✉ NOTE 2</button>
+            <button class="note" data-note="Sample note three. No personal messages are included.">✉ NOTE 3</button>
+          </div>
+          <p id="note-text" class="message" aria-live="polite">Choose an envelope.</p>
+          <button data-screen="home">← BACK</button>
+        </section>
+        <section id="quiz" class="screen">
+          <h1>Mini Quiz ★</h1>
+          <p id="question-count"></p>
+          <h2 id="question"></h2>
+          <div id="choices" class="menu"></div>
+          <p id="feedback" aria-live="polite"></p>
+          <button id="next-question" hidden>NEXT →</button>
+          <button data-screen="home">← BACK</button>
+        </section>
+      </div>
+    </section>
+    <p class="footer">Portfolio demo · Sample text and image placeholders only</p>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
